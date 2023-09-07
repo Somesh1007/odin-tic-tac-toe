@@ -65,6 +65,12 @@ body {
 .row {
     border: 2px solid black;
     background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #46494b;
+    font-size: 5rem;
+
 }
 
 .row:hover {
@@ -89,6 +95,28 @@ body {
 /* 1 4 7*/
 .row:nth-child(3n+1) {
     border-left: 0px;
+}
+
+.radio-button-section {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    color: #46494b;
+    font-weight: bold;
+
+}
+
+.radio-button-section input[type=radio] {
+    border: 0px;
+    height: 1.3rem;
+    width: 1.3rem;
+    margin-right: 10px;
+}
+
+#player-vs-computer + label {
+    margin-right: 20px;
 }
 
 .buttons-section {

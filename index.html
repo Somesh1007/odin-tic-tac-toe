@@ -17,20 +17,28 @@
         <div class="body">
             <div class="display-text">THis Will Become Dynamic Soon</div>
             <div class="gameboard">
-                <div class="row"></div>
-                <div class="row"></div>
-                <div class="row"></div>
-                <div class="row"></div>
-                <div class="row"></div>
-                <div class="row"></div>
-                <div class="row"></div>
-                <div class="row"></div>
-                <div class="row"></div>
+                <div class="row 0-0">X</div>
+                <div class="row 0-1">O</div>
+                <div class="row 0-2">X</div>
+                <div class="row 1-0">O</div>
+                <div class="row 1-1">X</div>
+                <div class="row 1-2">O</div>
+                <div class="row 2-0">O</div>
+                <div class="row 2-1">O</div>
+                <div class="row 2-2">X</div>
             </div>
-            <div class="buttons-section">
-                <button>Start Game</button>
 
-                <button>Restart Game</button>
+            <div class="radio-button-section">
+                <input type="radio" name="game_type" id="player-vs-computer">
+                <label for="player-vs-computer">Player vs Computer</label>
+
+                <input type="radio" name="game_type" id="player-vs-player">
+                <label for="player-vs-player">Player vs Player</label>
+            </div>
+
+            <div class="buttons-section">
+                <button id="start-game-button">Start Game</button>
+                <button id="restart-game-button">Restart Game</button>
             </div>
         </div>
     </div>
